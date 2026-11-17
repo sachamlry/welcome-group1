@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Group1 – partage de fichiers</title>
+  <meta name="description" content="Group1, fournisseur de partage de fichiers : présentation du service, création de compte, conditions et état.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="/static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/css/welcome.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="/">Group1</a>
+    <nav aria-label="Rubriques">
+      <a href="/#compte">Compte</a>
+      <a href="/#conditions">Conditions</a>
+      <a href="/#etat">État</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="service" class="intro">
+    <p class="eyebrow">welcome.group1.umons</p>
+    <h1>Partage de fichiers</h1>
+    <p class="lead">Group1 est le fournisseur de partage de fichiers du réseau .umons. Vous déposez vos fichiers chez nous et vous choisissez qui peut les lire ou les modifier.</p>
+
+    <!-- ===== ÉTAT DU SERVICE (1/2) ===== à modifier : voir README.md -->
+    <div class="card service">
+      <div>
+        <p class="label">Adresse du service</p>
+        <p class="host">files.group1.umons</p>
+      </div>
+      <p class="badge" data-state="bientot">Bientôt disponible</p>
+      <!-- Bouton à décommenter quand le service est en ligne :
+      <a class="btn" href="http://files.group1.umons" rel="noopener">Ouvrir le service</a>
+      -->
+    </div>
+
+    <ul class="feats">
+      <li><strong>Envoi et téléchargement</strong> depuis le navigateur, sans logiciel à installer.</li>
+      <li><strong>Contrôle d’accès</strong> par compte : chaque partage se fait avec une personne ou un groupe précis, en lecture ou en modification.</li>
+      <li><strong>Liens de partage</strong> protégés par mot de passe, avec date d’expiration.</li>
+      <li><strong>1 Go par compte</strong> au départ, davantage sur demande.</li>
+    </ul>
+  </section>
+
+  <section id="compte">
+    <h2>Obtenir un compte</h2>
+    <ol class="steps">
+      <li>
+        <h3>Écrivez-nous</h3>
+        <p>Envoyez un mail à notre adresse de contact (rubrique <a href="/#contact">Contact</a>) depuis l’adresse de votre groupe. Indiquez votre numéro de groupe et les noms d’utilisateur souhaités.</p>
+      </li>
+      <li>
+        <h3>Nous créons vos comptes</h3>
+        <p>Vous recevez par mail vos informations de connexion. Changez votre mot de passe dès la première connexion.</p>
+      </li>
+      <li>
+        <h3>Connectez-vous</h3>
+        <p>Rendez-vous sur <span class="mono">files.group1.umons</span> avec votre nom d’utilisateur et votre mot de passe.</p>
+      </li>
+    </ol>
+    <p class="note">Les comptes sont créés sur demande : il n’y a pas d’inscription libre. La connexion par un fournisseur d’identité (SSO) sera proposée dès qu’elle sera prête, et annoncée sur cette page.</p>
+  </section>
+
+  <section id="conditions">
+    <h2>Conditions d’utilisation</h2>
+    <dl class="terms">
+      <div>
+        <dt>Votre compte</dt>
+        <dd>Il est personnel. Ne partagez pas vos identifiants ; demandez plutôt un compte par personne.</dd>
+      </div>
+      <div>
+        <dt>Vos fichiers</dt>
+        <dd>Ils restent les vôtres. Nous n’y accédons que pour maintenir le service ou traiter un incident de sécurité.</dd>
+      </div>
+      <div>
+        <dt>Stockage</dt>
+        <dd>1 Go par compte. Écrivez-nous si vous avez besoin de plus.</dd>
+      </div>
+      <div>
+        <dt>Journalisation</dt>
+        <dd>Les connexions et les accès aux fichiers sont journalisés pour détecter les abus et répondre aux incidents.</dd>
+      </div>
+      <div>
+        <dt>Usage interdit</dt>
+        <dd>Pas de logiciel malveillant, pas de tentative d’accès aux données d’autrui, pas d’usage visant à saturer le service. Un compte en infraction est suspendu.</dd>
+      </div>
+      <div>
+        <dt>Maintenance</dt>
+        <dd>Les interruptions prévues sont annoncées à l’avance dans la rubrique « État » et par mail.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section id="etat">
+    <h2>État des services</h2>
+    <!-- ===== ÉTAT DU SERVICE (2/2) ===== -->
+    <ul class="status card">
+      <li><span>Partage de fichiers <span class="mono dim">files.group1.umons</span></span><span class="badge" data-state="bientot">Bientôt disponible</span></li>
+      <li><span>Page d’information <span class="mono dim">welcome.group1.umons</span></span><span class="badge" data-state="en_ligne">En ligne</span></li>
+      <li><span>DNS <span class="mono dim">group1.umons</span></span><span class="badge" data-state="en_ligne">En ligne</span></li>
+    </ul>
+    <!-- Message de maintenance ou d'incident, à décommenter si besoin :
+    <p class="note"><strong>Dernière information.</strong> Maintenance jeudi 19 novembre de 20h à 21h.</p>
+    -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <!-- ===== CONTACT ===== remplacer ce paragraphe quand l'adresse existe, par exemple :
+    <p>Écrivez à <a href="mailto:contact@exemple.umons">contact@exemple.umons</a> pour une demande de compte, une augmentation de quota ou un problème d’accès. Nous répondons par mail.</p>
+    -->
+    <p>Notre adresse de contact sera publiée ici très prochainement.</p>
+    <p>Si vous pensez avoir trouvé une faille ou constatez un comportement anormal sur votre compte, signalez-le à la même adresse en commençant l’objet par <span class="mono">[SECURITE]</span>.</p>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <p>Group1 · group1.umons</p>
+  <p>Ce site ne charge aucune ressource externe, n’exécute aucun script et ne dépose aucun cookie.</p>
+</footer>
+</body>
+</html>
